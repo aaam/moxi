@@ -28,6 +28,6 @@ platforms:
 suites:
 - name: standard
   run_list:
-  - recipe[moxi]
+  - recipe[moxi::data_bag]
   attributes:
-    moxi: 
+    moxi:

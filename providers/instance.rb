@@ -15,13 +15,12 @@ action :create do
     mode "0644"
     owner "root"
     group "root"
-    variables  {
-      :port           => new_resource.port,
+    variables  :port           => new_resource.port,
       :hash_algorithm => new_resource.hash_algorithm,
       :num_replicas   => new_resource.num_replicas,
       :server_list    => new_resource.server_list,
       :v_bucket_map   => new_resource.v_bucket_map
-    }
+
   end
   new_resource.updated_by_last_action(true)
 
