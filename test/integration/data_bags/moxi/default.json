@@ -1,4 +1,5 @@
 {
-  "id": default,
-  "port": 11211
+  "id": "default",
+  "port": "11211",
+  "server_list": [ "127.0.0.1:11211"]
 }

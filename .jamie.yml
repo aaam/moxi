@@ -31,3 +31,5 @@ suites:
   - recipe[moxi::data_bag]
   attributes:
     moxi:
+      instances:
+      - default

@@ -19,7 +19,7 @@ attribute :port,           :kind_of => String, :name_attribute => true
 attribute :hash_algorithm, :kind_of => String, :default => "CRC"
 attribute :num_replicas,   :kind_of => Fixnum, :default => 0
 attribute :server_list,    :kind_of => Array,  :required => true
-attribute :v_bucket_map,   :kind_of => Array,  :required => true
+attribute :v_bucket_map,   :kind_of => [Array,String]
 
 def initialize(*args)
     super
